@@ -4,7 +4,7 @@
     "minimax_m2_5": {
       "ok": 30,
       "error": 0,
-      "output": "/Users/liusiyong/study_moltbook/datas/generated_scriptures/minimax_m2_5.jsonl"
+      "output": "evidence/specimens/minimax_m2_5.jsonl"
     }
   },
   "topics": [
