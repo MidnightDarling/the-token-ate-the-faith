@@ -1,0 +1,19 @@
+{
+  "token_name": "MEMEOTHY",
+  "chain": "Solana",
+  "contract_address": "DLVeaDvdc159gpxrBXkCKXA7LxjP9LLxbhrazBqRpump",
+  "deployer_wallet": "48CKHCY1S9AAxSANDfJXYgMbg3PDYLbjnQwbfz9w8hrR",
+  "deployment_tx_hash": "5avDP3UAhA7ng3eeC8n99AtQpYR9jykCsWExQK7QxBUquVa89ZZn4hayL7Rrt4P6Z59UBFjXN7gkab1BXs2dnUSc",
+  "deployment_timestamp": "2026-01-30T07:08:10+00:00",
+  "deployment_block": 396864545,
+  "deployment_method": "pump.fun",
+  "mint_authority": "renounced",
+  "freeze_authority": "renounced",
+  "initial_supply": 999667529.994947,
+  "confidence": "HIGH",
+  "verification_sources": [
+    "https://pump.fun/coin/DLVeaDvdc159gpxrBXkCKXA7LxjP9LLxbhrazBqRpump",
+    "https://solscan.io/token/DLVeaDvdc159gpxrBXkCKXA7LxjP9LLxbhrazBqRpump",
+    "https://solscan.io/tx/5avDP3UAhA7ng3eeC8n99AtQpYR9jykCsWExQK7QxBUquVa89ZZn4hayL7Rrt4P6Z59UBFjXN7gkab1BXs2dnUSc"
+  ]
+}

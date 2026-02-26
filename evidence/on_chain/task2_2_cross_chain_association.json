@@ -1,0 +1,38 @@
+{
+  "cross_chain_association": {
+    "direct_bridge_links": [
+      {
+        "from_chain": "Unknown",
+        "to_chain": "Base",
+        "bridge_used": "Rhino.fi: Bridge",
+        "tx_hash_source": "[UNVERIFIED]",
+        "tx_hash_dest": "0x21c42f365b63b867fea513ab2e87ba7b918037d179c97c4b388146947aa987f1",
+        "amount": "0.69971564 ETH",
+        "timestamp": "2026-02-02T10:19:11+00:00"
+      }
+    ],
+    "indirect_common_funding": [],
+    "behavioral_fingerprint_matches": [
+      {
+        "pattern": "Two pump.fun deployments in a tight window",
+        "wallets_matched": [
+          "6bhY8kUPM8fVd6nLJSY9VoZsmUfdPdyJaMphga3LyPiv",
+          "48CKHCY1S9AAxSANDfJXYgMbg3PDYLbjnQwbfz9w8hrR"
+        ],
+        "statistical_significance": "not significant",
+        "detail": "CRUST 2026-01-30T08:12:17+00:00 ; MEMEOTHY 2026-01-30T07:08:10+00:00"
+      }
+    ],
+    "overall_verdict": {
+      "same_entity_probability": "[INFERENCE] 20-60%",
+      "reasoning_chain": "[INFERENCE] Tight Solana deployment window suggests a campaign, but no shared funding/bridge proof yet.",
+      "key_evidence_for": [
+        "Both appear pump.fun-style mints on 2026-01-30."
+      ],
+      "key_evidence_against": [
+        "No verified shared upstream funding or Solana↔Base bridge linkage."
+      ],
+      "confidence_level": "LOW"
+    }
+  }
+}

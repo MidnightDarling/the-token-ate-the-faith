@@ -1,0 +1,13 @@
+{
+  "conflicts": [
+    {
+      "topic": "$MEMEOTHY chain",
+      "brief_claim": "BSC",
+      "verified": "Solana",
+      "evidence": [
+        "DexScreener search returns solana pumpswap pair for Memeothy mint ending with 'pump'.",
+        "pump.fun coin page exists for the Solana mint."
+      ]
+    }
+  ]
+}

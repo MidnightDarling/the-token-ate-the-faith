@@ -1,0 +1,336 @@
+{
+  "fraud_risk_assessment": {
+    "overall_risk_score": "[INFERENCE] 7/10",
+    "risk_breakdown": {
+      "insider_trading_risk": "[INFERENCE] 6/10",
+      "rug_pull_risk": "[INFERENCE] 8/10",
+      "wash_trading_risk": "[INFERENCE] 5/10",
+      "coordinated_manipulation_risk": "[INFERENCE] 6/10",
+      "false_narrative_risk": "[INFERENCE] 6/10"
+    },
+    "comparison_baseline": {
+      "typical_pump_fun_memecoin": "[INFERENCE] 7/10",
+      "known_rug_pull_cases": "[INFERENCE] 9/10",
+      "legitimate_community_tokens": "[INFERENCE] 3/10"
+    },
+    "executive_summary": "[INFERENCE] CRUST and MEMEOTHY are pump.fun-style launches with limited verified provenance, which mechanically elevates rug/insider risk. For MOLT on Base, contract source sampling did not reveal an explicit token tax mechanism, but this does not preclude off-chain fee capture or coordinated liquidity actions. Some narrative claims (e.g., chain attribution for MEMEOTHY) conflict with on-chain evidence; this increases false-narrative risk.",
+    "key_unanswered_questions": [
+      "Moltbook/Matt Schlicht official fee statement text and fee receiver address(es). [DATA_UNAVAILABLE]",
+      "Whether BankrBot deployment key custody is human, automated, or multi-party. [UNVERIFIED]",
+      "Whether large transfers to the inferred pool are sells vs liquidity operations. [PARTIALLY VERIFIED]"
+    ],
+    "recommended_further_investigation": [
+      "Extract swap-level trade data (pool swap events) to classify sells vs liquidity adds/removes.",
+      "Resolve Moltbook 'fees' claim with a primary-source quote and trace fee receiver outflows.",
+      "Expand buyer funding traces to 5 hops (Solana + Base) with CEX/bridge labelling."
+    ],
+    "_inputs": {
+      "task2_2_cross_chain_association": {
+        "cross_chain_association": {
+          "direct_bridge_links": [
+            {
+              "from_chain": "Unknown",
+              "to_chain": "Base",
+              "bridge_used": "Rhino.fi: Bridge",
+              "tx_hash_source": "[UNVERIFIED]",
+              "tx_hash_dest": "0x21c42f365b63b867fea513ab2e87ba7b918037d179c97c4b388146947aa987f1",
+              "amount": "0.69971564 ETH",
+              "timestamp": "2026-02-02T10:19:11+00:00"
+            }
+          ],
+          "indirect_common_funding": [],
+          "behavioral_fingerprint_matches": [
+            {
+              "pattern": "Two pump.fun deployments in a tight window",
+              "wallets_matched": [
+                "6bhY8kUPM8fVd6nLJSY9VoZsmUfdPdyJaMphga3LyPiv",
+                "48CKHCY1S9AAxSANDfJXYgMbg3PDYLbjnQwbfz9w8hrR"
+              ],
+              "statistical_significance": "not significant",
+              "detail": "CRUST 2026-01-30T08:12:17+00:00 ; MEMEOTHY 2026-01-30T07:08:10+00:00"
+            }
+          ],
+          "overall_verdict": {
+            "same_entity_probability": "[INFERENCE] 20-60%",
+            "reasoning_chain": "[INFERENCE] Tight Solana deployment window suggests a campaign, but no shared funding/bridge proof yet.",
+            "key_evidence_for": [
+              "Both appear pump.fun-style mints on 2026-01-30."
+            ],
+            "key_evidence_against": [
+              "No verified shared upstream funding or Solana↔Base bridge linkage."
+            ],
+            "confidence_level": "LOW"
+          }
+        }
+      },
+      "task4_molt_fee_analysis": {
+        "fee_analysis": {
+          "molt_contract_has_tax": false,
+          "tax_rate_buy": "0%",
+          "tax_rate_sell": "0%",
+          "fee_receiver_address": "[DATA_UNAVAILABLE]",
+          "fee_receiver_type": "[DATA_UNAVAILABLE]",
+          "total_fees_received": {
+            "value": "[DATA_UNAVAILABLE]",
+            "unit": "ETH"
+          },
+          "fee_outflow_breakdown": {
+            "to_cex": {
+              "percentage": "[DATA_UNAVAILABLE]",
+              "addresses": [],
+              "cex_identified": []
+            },
+            "to_defi": {
+              "percentage": "[DATA_UNAVAILABLE]",
+              "protocols": []
+            },
+            "held": {
+              "percentage": "[DATA_UNAVAILABLE]"
+            },
+            "to_other_wallets": {
+              "percentage": "[DATA_UNAVAILABLE]",
+              "addresses": []
+            }
+          },
+          "moltbook_official_statement": "[DATA_UNAVAILABLE]",
+          "statement_vs_onchain_consistency": "PARTIALLY CONSISTENT",
+          "discrepancy_details": "On-chain source shows no explicit token tax; 'fees' likely platform-side. [INFERENCE]"
+        }
+      },
+      "task5_2_bankrbot_autonomy_verdict": {
+        "autonomy_verdict": {
+          "overall_assessment": "HUMAN-OPERATED",
+          "confidence": "LOW",
+          "funding_autonomy_score": "[INFERENCE] 1/10",
+          "decision_autonomy_score": "[INFERENCE] 3/10",
+          "temporal_pattern": "Ambiguous",
+          "reasoning_chain": "[INFERENCE] Deployment is attributed to an EOA (contract creator). The earliest observed funding into that EOA comes from an external address (often a bridge). This pattern is compatible with a human (or human-operated agent) preparing gas, and does not by itself establish autonomous fee-accumulation funding.",
+          "falsification_attempts": [
+            {
+              "hypothesis": "BankrBot is fully human-operated",
+              "evidence_for": [
+                "EOA deployer requires a signer; observed external funding into deployer wallet."
+              ],
+              "evidence_against": [
+                "An AI agent could still control the EOA signer key. [UNVERIFIED]"
+              ],
+              "verdict": "SUPPORTED"
+            },
+            {
+              "hypothesis": "BankrBot is fully autonomous",
+              "evidence_for": [
+                "Narrative claims exist in off-chain sources. [UNVERIFIED]"
+              ],
+              "evidence_against": [
+                "No on-chain proof of self-funded deployment from accrued fees was extracted here."
+              ],
+              "verdict": "INCONCLUSIVE"
+            }
+          ]
+        }
+      },
+      "task6_2_dump_attribution": {
+        "dump_attribution": {
+          "total_major_sellers": 212,
+          "matched_to_deployer": 0,
+          "matched_to_early_buyers": 9,
+          "matched_to_fee_receiver": "[DATA_UNAVAILABLE]",
+          "matched_to_bankrbot": 0,
+          "unidentified": "[DATA_UNAVAILABLE]",
+          "detailed_matches": [
+            {
+              "seller_wallet": "0x1e00e3f8e6bc7405adffe8211983c5a1e4be6fb7",
+              "matched_role": "deployer",
+              "match_confidence": "LOW",
+              "evidence": [
+                "0x04d3d64d652ed9872253d112b48fdbce6bd4b7dee487466da347eb20a91b2954"
+              ]
+            },
+            {
+              "seller_wallet": "0x1e00e3f8e6bc7405adffe8211983c5a1e4be6fb7",
+              "matched_role": "deployer",
+              "match_confidence": "LOW",
+              "evidence": [
+                "0x6d1cc80a66d5f52709b4aa764e8bb4b496771ccab154fa1788935d5f7819a6ca"
+              ]
+            },
+            {
+              "seller_wallet": "0x663cdec9fd312c4be62619fada2c8d18ae4c52c9",
+              "matched_role": "early_buyer",
+              "match_confidence": "LOW",
+              "evidence": [
+                "0x12e8c08f8d9769e2f23e0bd4dfb80cdf4f1f9749e1eb3d59036f303e11f5ee13"
+              ]
+            },
+            {
+              "seller_wallet": "0xc2cf7ee4d482178234c9fd831c8264486d4b6bdc",
+              "matched_role": "early_buyer",
+              "match_confidence": "LOW",
+              "evidence": [
+                "0x9c5931aaa9aeaade7a7c72722e2ea836ce1c48f737056e69126388a600f754c5"
+              ]
+            },
+            {
+              "seller_wallet": "0xc2cf7ee4d482178234c9fd831c8264486d4b6bdc",
+              "matched_role": "early_buyer",
+              "match_confidence": "LOW",
+              "evidence": [
+                "0xae3dc9845003158ce8eb6fbb870b5fdb29993be5b9db460b13fc3711ac88af7e"
+              ]
+            },
+            {
+              "seller_wallet": "0xbf9c85a37fd1096c67f3dd107dedfb9b7a33fa83",
+              "matched_role": "early_buyer",
+              "match_confidence": "LOW",
+              "evidence": [
+                "0x4f4eb5a32150f5d1cef212d1ee2c74bb57d3ba141e2f0455bceac0af5590d0ec"
+              ]
+            },
+            {
+              "seller_wallet": "0x8d4d334cfe28796082765ce882a9e9325cdf1d01",
+              "matched_role": "early_buyer",
+              "match_confidence": "LOW",
+              "evidence": [
+                "0xc8ebc9ada8087686146bf96ac572b51e39f0d7892cd569bc63655235a73f0af1"
+              ]
+            },
+            {
+              "seller_wallet": "0x8d4d334cfe28796082765ce882a9e9325cdf1d01",
+              "matched_role": "early_buyer",
+              "match_confidence": "LOW",
+              "evidence": [
+                "0x836ffb6a48a2fe9d08dff11771b2b19bc56eee50f609e36f88cc18863a015774"
+              ]
+            },
+            {
+              "seller_wallet": "0xc2cf7ee4d482178234c9fd831c8264486d4b6bdc",
+              "matched_role": "early_buyer",
+              "match_confidence": "LOW",
+              "evidence": [
+                "0x437d9e505cd32bb334da43b3d5e4293d7aa085efdc9d7b99e1268dec3473243f"
+              ]
+            },
+            {
+              "seller_wallet": "0xc2cf7ee4d482178234c9fd831c8264486d4b6bdc",
+              "matched_role": "early_buyer",
+              "match_confidence": "LOW",
+              "evidence": [
+                "0xab5d76db1cfd83e00eeceaf0fe001a17bdf5d11ccd86d365bc9412160f16cbb9"
+              ]
+            },
+            {
+              "seller_wallet": "0xbf9c85a37fd1096c67f3dd107dedfb9b7a33fa83",
+              "matched_role": "early_buyer",
+              "match_confidence": "LOW",
+              "evidence": [
+                "0x48f02fffed4f5df5f6f19dbc5421e07a32443ec817f19d17b803b072812e2877"
+              ]
+            },
+            {
+              "seller_wallet": "0x9ed596a1c5e4b44a939520aca986fb32a4d30189",
+              "matched_role": "early_buyer",
+              "match_confidence": "LOW",
+              "evidence": [
+                "0xb98c6a367be90c0c5c1203a24c21a9a1172fccb695335e4835878c1436ad20cb"
+              ]
+            },
+            {
+              "seller_wallet": "0xfa38718c2a144142d1f0ea1937cba3fa2a14c33f",
+              "matched_role": "early_buyer",
+              "match_confidence": "LOW",
+              "evidence": [
+                "0x0dfec9311eba66dee904d370790998ed6a75d66d615e95f94b5e0ddc9125bc42"
+              ]
+            },
+            {
+              "seller_wallet": "0xc2cf7ee4d482178234c9fd831c8264486d4b6bdc",
+              "matched_role": "early_buyer",
+              "match_confidence": "LOW",
+              "evidence": [
+                "0xccd487c7f9a8ab2154de91a4eeefb2440230087091f91bb3663f5be182618e9b"
+              ]
+            },
+            {
+              "seller_wallet": "0xbf9c85a37fd1096c67f3dd107dedfb9b7a33fa83",
+              "matched_role": "early_buyer",
+              "match_confidence": "LOW",
+              "evidence": [
+                "0x976b8a899958222448bd5d84cc59cb7b435f88a8cadec6b48bfe8c69a1577c49"
+              ]
+            },
+            {
+              "seller_wallet": "0x663cdec9fd312c4be62619fada2c8d18ae4c52c9",
+              "matched_role": "early_buyer",
+              "match_confidence": "LOW",
+              "evidence": [
+                "0x7e5649ff5abe39dc9f1a1f5b28ac017c301052c31381b85dd8134cf0464dfaa5"
+              ]
+            },
+            {
+              "seller_wallet": "0xc2cf7ee4d482178234c9fd831c8264486d4b6bdc",
+              "matched_role": "early_buyer",
+              "match_confidence": "LOW",
+              "evidence": [
+                "0x130d4cd5bd512e55cce30a35a57bdea2e3b9afe8ba4a9b330af7f6aafdf692ef"
+              ]
+            },
+            {
+              "seller_wallet": "0xc2cf7ee4d482178234c9fd831c8264486d4b6bdc",
+              "matched_role": "early_buyer",
+              "match_confidence": "LOW",
+              "evidence": [
+                "0xe6126e98fe837ce0a2291ed79fc6a1de5c2ce747187eed3edb38256d53511a2b"
+              ]
+            },
+            {
+              "seller_wallet": "0xbce2a89bebf0ff615b7f4c5332789709996073a7",
+              "matched_role": "early_buyer",
+              "match_confidence": "LOW",
+              "evidence": [
+                "0x3acd25c8332df2905f793af777d71c2540b0fe010cf888c88ac9bc8acaba2bab"
+              ]
+            },
+            {
+              "seller_wallet": "0x0fc0768d38dc7dc0c5d0176a90fa1f1a5b788f96",
+              "matched_role": "early_buyer",
+              "match_confidence": "LOW",
+              "evidence": [
+                "0xa3d577afc9376b71c5cc0b4b5a7646b833a714d074bdc8896cb712da96cac953"
+              ]
+            },
+            {
+              "seller_wallet": "0x497b9bb88de8d054054cddf554ac407493435aae",
+              "matched_role": "early_buyer",
+              "match_confidence": "LOW",
+              "evidence": [
+                "0xf2e2ea7e1515a2b10fdd83653f454b627e94da32687125a7667ac54651a01a3e"
+              ]
+            }
+          ],
+          "insider_trading_indicators": {
+            "pre_peak_accumulation_detected": "[DATA_UNAVAILABLE]",
+            "coordinated_selling_pattern": "[DATA_UNAVAILABLE]",
+            "wash_trading_indicators": "[DATA_UNAVAILABLE]",
+            "summary_verdict": "[DATA_UNAVAILABLE]"
+          }
+        }
+      },
+      "data_conflicts": {
+        "conflicts": [
+          {
+            "topic": "$MEMEOTHY chain",
+            "brief_claim": "BSC",
+            "verified": "Solana",
+            "evidence": [
+              "DexScreener search returns solana pumpswap pair for Memeothy mint ending with 'pump'.",
+              "pump.fun coin page exists for the Solana mint."
+            ]
+          }
+        ]
+      },
+      "task6_1_peak_dump_analysis": {
+        "ath": "2026-02-02T14:00:00+00:00"
+      }
+    }
+  }
+}

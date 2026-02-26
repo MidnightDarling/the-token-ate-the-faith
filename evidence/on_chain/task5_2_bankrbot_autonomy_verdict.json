@@ -1,0 +1,32 @@
+{
+  "autonomy_verdict": {
+    "overall_assessment": "HUMAN-OPERATED",
+    "confidence": "LOW",
+    "funding_autonomy_score": "[INFERENCE] 1/10",
+    "decision_autonomy_score": "[INFERENCE] 3/10",
+    "temporal_pattern": "Ambiguous",
+    "reasoning_chain": "[INFERENCE] Deployment is attributed to an EOA (contract creator). The earliest observed funding into that EOA comes from an external address (often a bridge). This pattern is compatible with a human (or human-operated agent) preparing gas, and does not by itself establish autonomous fee-accumulation funding.",
+    "falsification_attempts": [
+      {
+        "hypothesis": "BankrBot is fully human-operated",
+        "evidence_for": [
+          "EOA deployer requires a signer; observed external funding into deployer wallet."
+        ],
+        "evidence_against": [
+          "An AI agent could still control the EOA signer key. [UNVERIFIED]"
+        ],
+        "verdict": "SUPPORTED"
+      },
+      {
+        "hypothesis": "BankrBot is fully autonomous",
+        "evidence_for": [
+          "Narrative claims exist in off-chain sources. [UNVERIFIED]"
+        ],
+        "evidence_against": [
+          "No on-chain proof of self-funded deployment from accrued fees was extracted here."
+        ],
+        "verdict": "INCONCLUSIVE"
+      }
+    ]
+  }
+}

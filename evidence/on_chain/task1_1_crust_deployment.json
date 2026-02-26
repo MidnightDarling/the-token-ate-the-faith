@@ -1,0 +1,19 @@
+{
+  "token_name": "CRUST",
+  "chain": "Solana",
+  "contract_address": "HkBWJJiaUW5Kod4HpHWZiGD9PQVipmMiPDgiRPcNpump",
+  "deployer_wallet": "6bhY8kUPM8fVd6nLJSY9VoZsmUfdPdyJaMphga3LyPiv",
+  "deployment_tx_hash": "32TvBZNjYVnnhh2tob2rds7orMyvCqsCoZpJiiD9jic1iLHmjLqa3D9ESmRnRbafy7VhWEHvqzYtZp8D2JzaDWMX",
+  "deployment_timestamp": "2026-01-30T08:12:17+00:00",
+  "deployment_block": 396874124,
+  "deployment_method": "pump.fun",
+  "mint_authority": "renounced",
+  "freeze_authority": "renounced",
+  "initial_supply": 999959260.303223,
+  "confidence": "HIGH",
+  "verification_sources": [
+    "https://pump.fun/coin/HkBWJJiaUW5Kod4HpHWZiGD9PQVipmMiPDgiRPcNpump",
+    "https://solscan.io/token/HkBWJJiaUW5Kod4HpHWZiGD9PQVipmMiPDgiRPcNpump",
+    "https://solscan.io/tx/32TvBZNjYVnnhh2tob2rds7orMyvCqsCoZpJiiD9jic1iLHmjLqa3D9ESmRnRbafy7VhWEHvqzYtZp8D2JzaDWMX"
+  ]
+}

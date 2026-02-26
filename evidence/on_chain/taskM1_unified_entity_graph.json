@@ -1,0 +1,69 @@
+{
+  "unified_entity_graph": {
+    "identified_entities": [
+      {
+        "entity_id": "E001",
+        "label": "CRUST deployer",
+        "wallets": [
+          {
+            "address": "6bhY8kUPM8fVd6nLJSY9VoZsmUfdPdyJaMphga3LyPiv",
+            "chain": "Solana",
+            "role": "deployer"
+          }
+        ],
+        "cross_chain_links": [],
+        "confidence": "HIGH"
+      },
+      {
+        "entity_id": "E002",
+        "label": "MEMEOTHY deployer",
+        "wallets": [
+          {
+            "address": "48CKHCY1S9AAxSANDfJXYgMbg3PDYLbjnQwbfz9w8hrR",
+            "chain": "Solana",
+            "role": "deployer"
+          }
+        ],
+        "cross_chain_links": [],
+        "confidence": "HIGH"
+      },
+      {
+        "entity_id": "E003",
+        "label": "MOLT deployer",
+        "wallets": [
+          {
+            "address": "0x1e00e3f8e6bc7405adffe8211983c5a1e4be6fb7",
+            "chain": "Base",
+            "role": "deployer"
+          }
+        ],
+        "cross_chain_links": [],
+        "confidence": "HIGH"
+      },
+      {
+        "entity_id": "E004",
+        "label": "BankrBot/BNKR deployer",
+        "wallets": [
+          {
+            "address": "0x72469d86a92f5a9e975fe371a66015e667ab288f",
+            "chain": "Base",
+            "role": "deployer"
+          }
+        ],
+        "cross_chain_links": [],
+        "confidence": "MEDIUM"
+      }
+    ],
+    "entity_relationships": [
+      {
+        "from": "E001",
+        "to": "E002",
+        "relationship": "coordinated_with",
+        "evidence": [
+          "Tight deployment timing window (see task2_2_cross_chain_association.json). [INFERENCE]"
+        ],
+        "confidence": "LOW"
+      }
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "bankrbot_wallet_archaeology": {
+    "primary_wallet": "0x72469d86a92f5a9e975fe371a66015e667ab288f",
+    "chain": "Base",
+    "first_incoming_tx": {
+      "tx_hash": "0x6b19498ccd8a59656255218264d9d9293f522768a8a1deeb8a4b322086ab50b1",
+      "from": "0x4200000000000000000000000000000000000006",
+      "amount": "5.000100499 ETH",
+      "timestamp": "2024-11-28T02:46:35+00:00"
+    },
+    "funding_trace": [
+      {
+        "hop": 1,
+        "from": "0x4200000000000000000000000000000000000006",
+        "to": "0x72469d86a92f5a9e975fe371a66015e667ab288f",
+        "amount": "5.000100499 ETH",
+        "tx_hash": "0x6b19498ccd8a59656255218264d9d9293f522768a8a1deeb8a4b322086ab50b1"
+      }
+    ],
+    "ultimate_funding_source": {
+      "address": "0x4200000000000000000000000000000000000006",
+      "identified_as": "unknown",
+      "cex_name": "[DATA_UNAVAILABLE]",
+      "human_linkable": "[INFERENCE] likely"
+    },
+    "_token": {
+      "symbol": "BNKR",
+      "name": "BankrCoin",
+      "contract_address": "0x22aF33FE49fD1Fa80c7149773dDe5890D3c76F3b",
+      "pair": "0xAEC085E5A5CE8d96A7bDd3eB3A62445d4f6CE703",
+      "dexscreener_url": "https://dexscreener.com/base/0xaec085e5a5ce8d96a7bdd3eb3a62445d4f6ce703"
+    },
+    "_deployment": {
+      "creation_tx": "0x661d7c8f088bb866b756bf17cf74ca43890c18260318deab861e37e8d7594662",
+      "deployment_timestamp": "2024-12-03T04:44:53+00:00",
+      "deployment_block": 23205873,
+      "basescan_contract_url": "https://basescan.org/address/0x22aF33FE49fD1Fa80c7149773dDe5890D3c76F3b"
+    }
+  }
+}

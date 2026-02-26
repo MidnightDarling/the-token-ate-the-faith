@@ -1,0 +1,142 @@
+[
+  {
+    "token": "$CRUST",
+    "rank": 1,
+    "buyer_wallet": "1m98T4s9TMjk4rJ5rT6XT7N8Kyx1n7coTEbBNK5LzyN",
+    "buy_tx_hash": "2LrD85gFHF6qxVMrovX9iEyHPvpdKCUteLzvuREK7soTmyhdmZaXJZbQu3d8ikKtBuYQoxzE3VSBSsi5qc2HJoaL",
+    "buy_timestamp": "2026-01-30T08:12:17+00:00",
+    "seconds_after_deployment": 0,
+    "amount_token_bought": 10396601.599999,
+    "amount_paid": {
+      "value": 0.31204116,
+      "unit": "SOL"
+    },
+    "price_per_token_at_buy": 3.0013765267299465e-08
+  },
+  {
+    "token": "$CRUST",
+    "rank": 2,
+    "buyer_wallet": "HugksxcSGZnhfTuLuwnP38E94FX3HjWZfiNjiXSdx6Yh",
+    "buy_tx_hash": "3tarUYp49iw8JHoomLHxPHVKqVkMHNd8zDQcY6sA9wXtzu4NgPBvHbURXfmJeGvVCf67JFz4jfHtbJiPNbcu6TVe",
+    "buy_timestamp": "2026-01-30T08:12:17+00:00",
+    "seconds_after_deployment": 0,
+    "amount_token_bought": 76900560.978354,
+    "amount_paid": {
+      "value": 2.5099626,
+      "unit": "SOL"
+    },
+    "price_per_token_at_buy": 3.263906749271316e-08
+  },
+  {
+    "token": "$CRUST",
+    "rank": 3,
+    "buyer_wallet": "8uCXyaaKsPbNr2LnGZFavBkm2SZ6mDzKFyTsYNfN1uyr",
+    "buy_tx_hash": "2UNPAMF4F173FgwDYSdqPJsmSG8P6MZd1R57izEoknbtimFFSZyh56yczkuZsHgvuRHVcFZANUfJ7wKB5wVyzjtj",
+    "buy_timestamp": "2026-01-30T08:12:18+00:00",
+    "seconds_after_deployment": 1,
+    "amount_token_bought": 357.666548,
+    "amount_paid": {
+      "value": 0.002071815,
+      "unit": "SOL"
+    },
+    "price_per_token_at_buy": 5.792588128761765e-06
+  },
+  {
+    "token": "$CRUST",
+    "rank": 4,
+    "buyer_wallet": "8dw4SyAWnm2MpemHJvzkMtAN6uMnbniHVaaHb3CJ3MoS",
+    "buy_tx_hash": "2jMGEyTg2egMa1vYMWoWoeXCdJHoU3uHwzxmidSLpAnvUnQfzz5MHu9CVe24omuFJ6ZkNUarJuj72KRZyPtbH3fa",
+    "buy_timestamp": "2026-01-30T08:12:19+00:00",
+    "seconds_after_deployment": 2,
+    "amount_token_bought": 76900560.978354,
+    "amount_paid": {
+      "value": 2.469137565,
+      "unit": "SOL"
+    },
+    "price_per_token_at_buy": 3.210818664502348e-08
+  },
+  {
+    "token": "$CRUST",
+    "rank": 5,
+    "buyer_wallet": "8dw4SyAWnm2MpemHJvzkMtAN6uMnbniHVaaHb3CJ3MoS",
+    "buy_tx_hash": "5bJFEfhqDpBtpqvbqc3H7sKZCJoCLxJ4C5Wo3NjttNoJvYa4RScEKfkiAXaPDc2i1yVG1Mv3AcrtoiEPQaLkG1VD",
+    "buy_timestamp": "2026-01-30T08:12:21+00:00",
+    "seconds_after_deployment": 4,
+    "amount_token_bought": 6497875.999999,
+    "amount_paid": {
+      "value": 0.192015486,
+      "unit": "SOL"
+    },
+    "price_per_token_at_buy": 2.9550500194221863e-08
+  },
+  {
+    "token": "$CRUST",
+    "rank": 6,
+    "buyer_wallet": "8dw4SyAWnm2MpemHJvzkMtAN6uMnbniHVaaHb3CJ3MoS",
+    "buy_tx_hash": "qjqf627uYUqTaBgcvVKJEjW5fsVmZKD2WNBv9xBg9qnRcYi5oui2Sffej9wP36dbL19tTSjBbaMcytz7gJUmNvX",
+    "buy_timestamp": "2026-01-30T08:12:21+00:00",
+    "seconds_after_deployment": 4,
+    "amount_token_bought": 357.666548,
+    "amount_paid": {
+      "value": 1.0635e-05,
+      "unit": "SOL"
+    },
+    "price_per_token_at_buy": 2.9734399427256476e-08
+  },
+  {
+    "token": "$CRUST",
+    "rank": 7,
+    "buyer_wallet": "8dw4SyAWnm2MpemHJvzkMtAN6uMnbniHVaaHb3CJ3MoS",
+    "buy_tx_hash": "2NxqUuSakkYak6MDCdP9uMxdVaxoYgGX5ypYzSo2HfEn4LnuLK22dh9yXyvGBviWSACTGwHnerh1XkCKzQ87GRBH",
+    "buy_timestamp": "2026-01-30T08:12:31+00:00",
+    "seconds_after_deployment": 14,
+    "amount_token_bought": 3898725.6,
+    "amount_paid": {
+      "value": 0.114069475,
+      "unit": "SOL"
+    },
+    "price_per_token_at_buy": 2.9258143994540164e-08
+  },
+  {
+    "token": "$CRUST",
+    "rank": 8,
+    "buyer_wallet": "Afr4A25fWTYGhvbVuCBEP42PcddkSEpzwxzShT6zak17",
+    "buy_tx_hash": "3PxEU51JGycKUh8m28mK8ZGP4tVBuoEcoBwLyPHy5bFfVpMUG36sL4AuE45ic6EmLxhGY7bapRxETRdP1pMYq7R9",
+    "buy_timestamp": "2026-01-30T08:13:26+00:00",
+    "seconds_after_deployment": 69,
+    "amount_token_bought": 8319471.130964,
+    "amount_paid": {
+      "value": 0.26207908,
+      "unit": "SOL"
+    },
+    "price_per_token_at_buy": 3.1501891872017615e-08
+  },
+  {
+    "token": "$CRUST",
+    "rank": 9,
+    "buyer_wallet": "Afr4A25fWTYGhvbVuCBEP42PcddkSEpzwxzShT6zak17",
+    "buy_tx_hash": "5KKZzVbPSUG2PFmUz2nv7P7Zub3X6RPjfoSew416SA7koBxynfbHdUewXwExhLEgDXmvf5eceNJ2G9ZoCt5rScVF",
+    "buy_timestamp": "2026-01-30T08:13:30+00:00",
+    "seconds_after_deployment": 73,
+    "amount_token_bought": 8188778.075246,
+    "amount_paid": {
+      "value": 0.260005,
+      "unit": "SOL"
+    },
+    "price_per_token_at_buy": 3.1751379462336837e-08
+  },
+  {
+    "token": "$CRUST",
+    "rank": 10,
+    "buyer_wallet": "6UQy5qhXZKZHmL8TZcG7V31p2TWMyS7rE3h89wbVp75b",
+    "buy_tx_hash": "25JZk1unVJ2SkaVkTdDoB3CYDBeMmFgkcB7skRAbyV4NCGykqCug5DEpoLx7fq2THqbeEyZMc5Q5mXLeeShSnYFZ",
+    "buy_timestamp": "2026-01-30T08:13:38+00:00",
+    "seconds_after_deployment": 81,
+    "amount_token_bought": 2619858.937883,
+    "amount_paid": {
+      "value": 0.103215294,
+      "unit": "SOL"
+    },
+    "price_per_token_at_buy": 3.939727155058357e-08
+  }
+]

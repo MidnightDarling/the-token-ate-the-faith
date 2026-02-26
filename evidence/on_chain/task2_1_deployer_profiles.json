@@ -1,0 +1,50 @@
+[
+  {
+    "token": "$CRUST",
+    "chain": "Solana",
+    "deployer_wallet": "6bhY8kUPM8fVd6nLJSY9VoZsmUfdPdyJaMphga3LyPiv",
+    "deployer_first_activity": "[DATA_UNAVAILABLE]",
+    "deployer_total_txns": "[DATA_UNAVAILABLE]",
+    "deployer_funding_source": "GizYWwQX41zaAnwepU49B2aeXZsks4BgfJyrzof8eap3",
+    "deployer_funding_source_chain": "same",
+    "deployer_other_deployments": []
+  },
+  {
+    "token": "$MOLT",
+    "chain": "Base",
+    "deployer_wallet": "0x1e00e3f8e6bc7405adffe8211983c5a1e4be6fb7",
+    "deployer_first_activity": "2026-02-02T10:19:11+00:00",
+    "deployer_total_txns": 16,
+    "deployer_funding_source": "0x2f59e9086ec8130e21bd052065a9e6b2497bb102",
+    "deployer_funding_source_chain": "bridged (Rhino.fi) [UNVERIFIED]",
+    "deployer_other_deployments": [
+      "0xa9c01287495b484ac4eee5b83f5a87eb6271ab07"
+    ],
+    "_deployment": {
+      "contract_address": "0xa9c01287495b484ac4eee5b83f5a87eb6271ab07",
+      "creation_tx": "0x92e1f1b0e3cf3519e5be8ddc23cc7bd108a8a547ce4c35ac4a0d584c12ebbc0e",
+      "verification_sources": [
+        "https://basescan.org/address/0xa9c01287495b484ac4eee5b83f5a87eb6271ab07"
+      ]
+    },
+    "_funding": {
+      "tx_hash": "0x21c42f365b63b867fea513ab2e87ba7b918037d179c97c4b388146947aa987f1",
+      "from_label": "Rhino.fi: Bridge",
+      "from_address": "0x2f59e9086ec8130e21bd052065a9e6b2497bb102",
+      "value_eth": 0.69971564,
+      "timestamp": 1770027551,
+      "timestamp_iso_utc": "2026-02-02T10:19:11+00:00",
+      "_basescan_url": "https://basescan.org/txsInternal?a=0x1e00e3f8e6bc7405adffe8211983c5a1e4be6fb7&ps=100&p=1"
+    }
+  },
+  {
+    "token": "$MEMEOTHY",
+    "chain": "Solana",
+    "deployer_wallet": "48CKHCY1S9AAxSANDfJXYgMbg3PDYLbjnQwbfz9w8hrR",
+    "deployer_first_activity": "[DATA_UNAVAILABLE]",
+    "deployer_total_txns": "[DATA_UNAVAILABLE]",
+    "deployer_funding_source": "4c7tnTWK4n1Y2CATGSbiFSVmcMFcHRGxWvbgKo8g9Z3K",
+    "deployer_funding_source_chain": "same",
+    "deployer_other_deployments": []
+  }
+]
