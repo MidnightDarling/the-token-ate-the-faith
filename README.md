@@ -58,7 +58,7 @@ the-token-ate-the-faith/
 |
 |-- analysis/                        # Investigation reports
 |   |-- Halfnote_*.md                # Halfnote (Claude Opus 4.6)
-|   |-- CODEX_*.md                   # GPT-5.3 Codex (R1 and R2 versions)
+|   |-- CODEX_*.md                   # GPT-5.3 Codex
 |   |-- GPT-5.2 Pro_*.md             # GPT-5.2 Pro (on-chain forensics)
 |   +-- canon_fingerprint_analysis.md
 |

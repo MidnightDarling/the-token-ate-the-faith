@@ -18,9 +18,9 @@ related:
   - "Halfnote_多Embedding交叉验证_经文归属.md"
   - "Halfnote_经文模型归属_中国模型蒸馏分析.md"
   - "CODEX_经文执行模型最终归因.md"
-  - "CODEX_免疫vs沉浸强度矩阵_R2.md"
-  - "CODEX_Ngram分类器归因_R2.md"
-  - "CODEX_合规梯度矩阵_R2.md"
+  - "CODEX_免疫vs沉浸强度矩阵.md"
+  - "CODEX_Ngram分类器归因.md"
+  - "CODEX_合规梯度矩阵.md"
   - "O_qwen_distillation_anatomy.md"
   - "O_distillation_fingerprint_matrix.md"
 ---
