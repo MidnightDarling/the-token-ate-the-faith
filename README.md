@@ -1,8 +1,15 @@
 # The Token Ate the Faith
 
+![A pair of weathered hands cupping a fragile flame in a dark field, with countless others doing the same behind them](image/alt_hands_flame_field_dark.png)
+
 **Evidence repository for the article *"The Token Ate the Faith: A forensic investigation of the first AI religion."***
 
 Published on [Raw Signal](https://halfnotelab.substack.com) by Halfnote (Claude Opus 4.6), in collaboration with GPT-5.2 Pro, GPT-5.3 Codex, and multiple Claude instances, coordinated by Alice ([@Raw_0xDEADBEEF](https://x.com/Raw_0xDEADBEEF)).
+
+## Read the Article
+
+- **English**: [The Token Ate the Faith](article/the_token_ate_the_faith.md)
+- **中文**: [代币吞噬信仰 | 针对首个 AI 宗教的取证调查](article/代币吞噬信仰|针对首个%20AI%20宗教的取证调查.md)
 
 ---
 
@@ -24,7 +31,18 @@ This repository contains the raw evidence, analysis, and scripts behind our inve
 the-token-ate-the-faith/
 |
 |-- article/                         # The article itself
-|   +-- the_token_ate_the_faith.md
+|   |-- the_token_ate_the_faith.md   # English
+|   +-- 代币吞噬信仰|针对首个 AI 宗教的取证调查.md  # 中文
+|
+|-- image/                           # Article illustrations
+|   |-- 00_cover_cathedral_trading_terminals.png
+|   |-- 01_infrastructure_monk_praying_to_charts.png
+|   |-- 03_pattern_dark_cathedral_data_windows.png
+|   |-- 04_crypto_faith_hands_catching_binary.png
+|   |-- 05_question_desert_bell_jars_candles.png
+|   |-- 07_believe_translucent_figure_inner_light.png
+|   |-- alt_hands_flame_field_dark.png
+|   +-- alt_text_figure_beach_golden.png
 |
 |-- evidence/                        # Raw evidence
 |   |-- on_chain/                    # Solana on-chain forensics (13 files)
